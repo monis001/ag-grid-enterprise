@@ -1,0 +1,34 @@
+<div style="width:100%; height:100vh; overflow-y: scroll;">
+  <ag-grid-angular
+    #agGrid
+    style="width: 100%; height: 100%;"
+    id="myGrid"
+    class="ag-theme-balham"
+    [modules]="modules"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [pivotMode]="true"
+    [sideBar]="'filters'"
+    [rowData]="rowData"
+    [rowModelType]="rowModelType"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular>
+</div>
+<!-- THIS DOES NOT WORKS -->
+<!-- <div style="width:100%; height:100vh; overflow-y: scroll;">
+  <ag-grid-angular
+    #agGrid
+    style="width: 100%; height: 100%;"
+    id="myGrid"
+    class="ag-theme-balham"
+    [modules]="modules"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [pivotMode]="true"
+    [sideBar]="sidebar"
+    [rowData]="rowData"
+    [rowModelType]="rowModelType"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular>
+</div> -->
+
